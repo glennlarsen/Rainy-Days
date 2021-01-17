@@ -1,0 +1,143 @@
+main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 10% 35% auto;
+    gap: 10px;
+}
+
+.thumbnail-column > * {
+    border: solid 1px transparent;
+}
+
+.thumbnail-column > *:hover {
+    border: solid 1px #0b3a40;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10px;
+}
+
+.product-info > * {
+    margin: 0;
+}
+
+.product-info p {
+    color: #0B3A40;
+    text-transform: capitalize;
+}
+
+.product-info span {
+    font-weight: bolder;
+}
+
+.price-star-inline {
+    display: flex;
+    align-items: baseline;
+}
+
+.price-star-inline > p {
+    margin-right: 50px;
+    font-weight: bolder;
+}
+
+.color-picker, .size-picker {
+    display: flex;
+    gap: 10px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.size-picker {
+    margin-bottom: 20px;
+}
+
+.size-picker > *:hover {
+    background: #58777A;
+}
+
+.color-container p, .size-container p {
+    margin: 0;
+}
+
+.color-box {
+    padding: 10px;
+    border: solid 2px transparent;
+}
+
+.pick-orange {
+    background: #fea037;
+    border: solid 2px #0B3A40;
+}
+
+.pick-black {
+    background: black;
+}
+
+.pick-blue {
+    background: #06227B;
+}
+
+.size-box {
+    padding: 10px;
+    border: solid 2px #707070;
+    min-width: 25px;
+    box-sizing: content-box;
+    text-align: center;
+}
+
+.size-box p {
+    display: contents;
+    color: #041C1B;
+}
+
+.size-m {
+    background: #58777A;
+}
+
+.size-m p {
+    color: white;
+}
+
+.grid_container {
+  margin-top: 50px;  
+}
+
+.grid_container h2 {
+    grid-column: -1/1;
+    text-align: left;
+    color: #0B3A40;
+    margin-bottom: 0;
+}
+
+.cta_green:hover {
+    background: black;
+    color: white;
+}
+
+HTML CSSResult Skip Results Iframe
+EDIT ON
+.control-me::after {
+    content: "😃";
+    font-size: 100px;
+}
+#toggle:checked ~ .control-me::after {
+    content: "😩";
+}
+
+/*.visually-hidden {
+    position: absolute;
+    left: -100vw;*/
+    
+    /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
+}
+
+
+

@@ -1,0 +1,42 @@
+<svg id="Profile_button" data-name="Profile button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #b7c6c7;
+      }
+
+      .cls-4 {
+        fill: #0b3a40;
+      }
+
+      .cls-5 {
+        fill: #f2f2f2;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_9" data-name="Ellipse 9" class="cls-1" cx="20.5" cy="20.5" r="20.5" transform="translate(1739 53)"/>
+    </clipPath>
+  </defs>
+  <g id="Profile_button-2" data-name="Profile button" class="cls-2" transform="translate(-1739 -53)">
+    <g id="Profile_hover" data-name="Profile hover" transform="translate(1738.307 52.306)">
+      <g id="Group_43" data-name="Group 43">
+        <circle id="Ellipse_6" data-name="Ellipse 6" class="cls-3" cx="20.5" cy="20.5" r="20.5" transform="translate(0.694 0.694)"/>
+        <path id="Path_55" data-name="Path 55" class="cls-4" d="M43.774,41.022a1.293,1.293,0,0,1-1.132-1.294V37.8a4.891,4.891,0,0,0,1.265-2.887l.067-1.062a2.084,2.084,0,0,0,.9-1.261c.233-.83.033-1.559-.5-1.626H44.14l.133-1.958A4.57,4.57,0,0,0,39.747,24h-.832a4.66,4.66,0,0,0-4.593,5.01L34.455,31a.423.423,0,0,0-.2-.033c-.532.066-.732.8-.5,1.626a2.1,2.1,0,0,0,.932,1.294l.067,1.029A4.663,4.663,0,0,0,35.986,37.8v1.924a1.293,1.293,0,0,1-1.132,1.294C31.926,41.519,27,43.643,27,45.9v4.645H51.628V45.9C51.628,43.643,46.7,41.519,43.774,41.022Z" transform="translate(-18.267 -16.237)"/>
+      </g>
+    </g>
+    <g id="Profile" transform="translate(1738.307 52.306)">
+      <g id="Group_43-2" data-name="Group 43">
+        <circle id="Ellipse_6-2" data-name="Ellipse 6" class="cls-5" cx="20.5" cy="20.5" r="20.5" transform="translate(0.694 0.694)"/>
+        <path id="Path_55-2" data-name="Path 55" class="cls-4" d="M43.774,41.022a1.293,1.293,0,0,1-1.132-1.294V37.8a4.891,4.891,0,0,0,1.265-2.887l.067-1.062a2.084,2.084,0,0,0,.9-1.261c.233-.83.033-1.559-.5-1.626H44.14l.133-1.958A4.57,4.57,0,0,0,39.747,24h-.832a4.66,4.66,0,0,0-4.593,5.01L34.455,31a.423.423,0,0,0-.2-.033c-.532.066-.732.8-.5,1.626a2.1,2.1,0,0,0,.932,1.294l.067,1.029A4.663,4.663,0,0,0,35.986,37.8v1.924a1.293,1.293,0,0,1-1.132,1.294C31.926,41.519,27,43.643,27,45.9v4.645H51.628V45.9C51.628,43.643,46.7,41.519,43.774,41.022Z" transform="translate(-18.267 -16.237)"/>
+      </g>
+    </g>
+  </g>
+</svg>
