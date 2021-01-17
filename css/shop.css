@@ -1,40 +1,38 @@
 main {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .shop-top {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .filters-sortby {
-    display: flex;
-    margin: auto 0;
+  display: flex;
+  margin: auto 0;
 }
 
 .filters-sortby a {
-color: #58777A;
-text-transform: capitalize;
+  color: var(--color-light-green);
+  text-transform: capitalize;
 }
 
 .filter-box {
-    margin: 15px;
-    border: solid 1px #58777A;
-    height: fit-content;
-    border-radius: 8px;
-    width: 200px;
+  margin: 15px;
+  border: solid 1px var(--color-light-green);
+  height: fit-content;
+  border-radius: 8px;
+  width: 200px;
 }
 
 .filter-box:hover {
-    border: solid 2px #0b3a40;
+  border: solid 2px var(--color-header-footer);
 }
 
 .filter-box a {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-
-

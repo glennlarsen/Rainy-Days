@@ -1,183 +1,176 @@
 main {
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .checkout-grid {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 10% 80% 10%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 10% 80% 10%;
 }
 
 .form-box {
-    grid-row: 2/3;
-    /*grid-column: 1/2;*/
-    
+  grid-row: 2/3;
+  /*grid-column: 1/2;*/
 }
 
 .checkout-list {
-    background: #B7C6C7;
-    /*grid-column: 2/3;*/
-    grid-row: 1/4;
-    min-height: min-content;
-    display: flex;
+  background: var(--color-ligther-green);
+  /*grid-column: 2/3;*/
+  grid-row: 1/4;
+  min-height: min-content;
+  display: flex;
 }
 
-
-.checkout-form h2  {
-    font-size: small;
+.checkout-form h2 {
+  font-size: small;
 }
 
-.checkout-grid > *
- {
-    color: #041C1B;
-    text-transform: capitalize;
+.checkout-grid > * {
+  color: #041c1b;
+  text-transform: capitalize;
 }
 
 .breadcrumbs__item::before {
-    content: '<';
-    margin: 0 5px;
-    color: #10474e;
-  }
+  content: "<";
+  margin: 0 5px;
+  color: #10474e;
+}
 
 /* layout and global for form on checkout*/
 .form-wrapper {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    padding: 10px;
-    gap: 20px;
-    background: #F2F2F2;
-    border-radius: 8px 0 0 8px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding: 10px;
+  gap: 20px;
+  background: #f2f2f2;
+  border-radius: 8px 0 0 8px;
 }
 
 .form-wrapper section {
-    margin: 10px;
+  margin: 10px;
 }
 
 .form-wrapper label {
-    font-size: small;
+  font-size: small;
 }
 
 .form-wrapper h3 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .pay {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.form-wrapper input, select {
-    border: 1px solid #B7C6C7;
-    border-radius: 8px;
-    margin: 10px 0;
-    padding: 20px;
+.form-wrapper input,
+select {
+  border: 1px solid var(--color-ligther-green);
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 20px;
 }
 
 /*shipping info*/
 .zip-city {
-    display: flex;
+  display: flex;
 }
 
 .zip {
-    flex: 1;
+  flex: 1;
 }
 
 .zip input {
-    max-width: 100px;
+  max-width: 100px;
 }
 
 .city {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
 }
 
 /*payment*/
 
 select {
-    font-family: 'FontAwesome', 'Second Font name'
-  }
+  font-family: "FontAwesome", "Second Font name";
+}
 
-  .date-and-cvc {
-      display: flex;
-  }
+.date-and-cvc {
+  display: flex;
+}
 
-  .date-and-cvc input {
-      max-width: 100px;
-  }
+.date-and-cvc input {
+  max-width: 100px;
+}
 
-  .month, .day {
-      flex: 1.2;
-      align-self: flex-end;
-  }
+.month,
+.day {
+  flex: 1.2;
+  align-self: flex-end;
+}
 
-  .cvc {
-      flex: 1;
-      margin-left: 20px;
-  }
+.cvc {
+  flex: 1;
+  margin-left: 20px;
+}
 
-  .form-wrapper ::placeholder {
-      color: #041C1B;
-      opacity: 0.65;
-      letter-spacing: 3px;
-      word-spacing: 6px;
-  }
+.form-wrapper ::placeholder {
+  color: #041c1b;
+  opacity: 0.65;
+  letter-spacing: 3px;
+  word-spacing: 6px;
+}
 
-  /*Checkout list*/
+/*Checkout list*/
 
-  .checkout-content {
-      max-width: 270px;
-      margin: 0 auto;
-      padding: 20px 0;
-      height: 80vh;
-  }
+.checkout-content {
+  max-width: 270px;
+  margin: 0 auto;
+  padding: 20px 0;
+  height: 80vh;
+}
 
-  .trash {
-    display: flex;
-    align-items: flex-end;
-    font-size: medium;
+.trash {
+  display: flex;
+  align-items: flex-end;
+  font-size: medium;
 }
 
 .price-info > * {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .price-info p {
-    font-size: x-small;
+  font-size: x-small;
 }
 
-.price-info >:last-of-type {
-    font-weight: bold;
+.price-info > :last-of-type {
+  font-weight: bold;
 }
 
 .confirm-button {
-    display: flex;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .confirm-button a {
-    position: absolute;
-    top: 200px;
+  position: absolute;
+  top: 200px;
 }
 
-  .fa-trash-alt {
-      cursor: pointer;
-  }
-
-  
- 
-
-
-
+.fa-trash-alt {
+  cursor: pointer;
+}

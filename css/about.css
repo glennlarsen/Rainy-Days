@@ -1,79 +1,82 @@
 main {
-    min-height: 70vh;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  min-height: 70vh;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.history_container, .vision_container, .team_container {
-    display: flex;
-    max-height: 35vh;
-    box-shadow: 5px 5px 4px lightgray;
+.history_container,
+.vision_container,
+.team_container {
+  display: flex;
+  max-height: 35vh;
+  box-shadow: 5px 5px 4px lightgray;
 }
 
-.history_container > *, .vision_container > *, .team_container > * {
-    flex: 1;
+.history_container > *,
+.vision_container > *,
+.team_container > * {
+  flex: 1;
 }
 
 .history_container {
-    background: #58777A;
-    margin-left: 80px;
-    margin-top: 40px;
-    border-radius: 8px 8px 0 0;
-    color: white;
+  background: var(--color-light-green);
+  margin-left: 80px;
+  margin-top: 40px;
+  border-radius: 8px 8px 0 0;
+  color: white;
 }
 
 .history_container img {
-    border-radius: 0 8px 0 0;
+  border-radius: 0 8px 0 0;
 }
 
 .vision_container {
-    flex-direction: row-reverse;
-    background: #B7C6C7;
-    border-radius: 8px 0;
+  flex-direction: row-reverse;
+  background: var(--color-ligther-green);
+  border-radius: 8px 0;
 }
 
 .vision_container img {
-    border-radius: 8px 0 0 0;
+  border-radius: 8px 0 0 0;
 }
 
 .team_container {
-    background: #F2F2F2;
-    margin-right: 80px;
+  background: #f2f2f2;
+  margin-right: 80px;
 }
 
 .history_text {
-    flex: 1.5;
+  flex: 1.5;
 }
 
 .vision_text {
-    flex: 1.5;
+  flex: 1.5;
 }
 
 .team_text {
-    flex: 1.5;
+  flex: 1.5;
 }
 
-
-
 .about_box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-   font-size: smaller;
-   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: smaller;
+  text-align: left;
 }
 
 .about_box div {
-    max-width: 500px;
-    margin: auto;
+  max-width: 500px;
+  margin: auto;
 }
 
 .about_box h2 {
-    text-transform: capitalize;
-    font-size: x-large;
+  text-transform: capitalize;
+  font-size: x-large;
 }
 
-.vision_text h2, .team_text h2 {
-    color: #041C1B;
+.vision_text h2,
+.team_text h2 {
+  color: #041c1b;
 }

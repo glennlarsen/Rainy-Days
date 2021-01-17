@@ -1,47 +1,46 @@
-
 .background_container {
-    background: url(../images/mountain.jpg) no-repeat;
-    background-size: cover;
-    min-height: 80vh;
-    padding: 100px;
+  background: url(../images/mountain.jpg) no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  padding: 100px;
 }
 
 .breadcrumb_title {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .content_container {
-   max-width: 900px;
-   margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .form-wrapper {
-    display: flex;
-    text-align: left;
-    background: #F2F2F2;
-    border-radius: 8px;
+  display: flex;
+  text-align: left;
+  background: #f2f2f2;
+  border-radius: 8px;
 }
 
 .form-wrapper h3 {
-    color: #0B3A40;
+  color: var(--color-header-footer);
 }
 
 .form-wrapper > * {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 40px;
 }
 
 .icon {
-    height: 40px;
-    display: block;
+  height: 40px;
+  display: block;
 }
 
 .icon p {
-    padding-left: 45px;
+  padding-left: 45px;
 }
 
 .phone-icon {
@@ -49,49 +48,49 @@
 }
 
 .chat-icon {
-    background: url(../icons/chat.png) no-repeat;
-    font-style: italic;
-    cursor: pointer;
+  background: url(../icons/chat.png) no-repeat;
+  font-style: italic;
+  cursor: pointer;
 }
 
 .chat-icon:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .map-pin-icon {
-    background: url(../icons/map-pin.png) no-repeat;
+  background: url(../icons/map-pin.png) no-repeat;
 }
 
 .contact-info {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
-.form-wrapper input:not(:last-of-type), textarea {
-    border: 1px solid #B7C6C7;
-    border-radius: 8px;
-    margin: 10px 0;
-    padding: 20px;
+.form-wrapper input:not(:last-of-type),
+textarea {
+  border: 1px solid var(--color-ligther-green);
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 20px;
 }
 
 .form-wrapper textarea {
-    height: 65%;
-    min-height: 180px;
+  height: 65%;
+  min-height: 180px;
 }
 
 .form-wrapper label {
-    font-size: small;
+  font-size: small;
 }
 
 .form-wrapper p {
-    font-size: small;
+  font-size: small;
 }
 
 .map img {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .cta_green:hover {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
 }
-

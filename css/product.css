@@ -15,7 +15,7 @@ main {
 }
 
 .thumbnail-column > *:hover {
-    border: solid 1px #0b3a40;
+    border: solid 1px var(--color-header-footer);
 }
 
 .product-info {
@@ -30,7 +30,7 @@ main {
 }
 
 .product-info p {
-    color: #0B3A40;
+    color: var(--color-header-footer);
     text-transform: capitalize;
 }
 
@@ -60,7 +60,7 @@ main {
 }
 
 .size-picker > *:hover {
-    background: #58777A;
+    background: var(--color-light-green);
 }
 
 .color-container p, .size-container p {
@@ -74,7 +74,7 @@ main {
 
 .pick-orange {
     background: #fea037;
-    border: solid 2px #0B3A40;
+    border: solid 2px var(--color-header-footer);
 }
 
 .pick-black {
@@ -99,7 +99,7 @@ main {
 }
 
 .size-m {
-    background: #58777A;
+    background: var(--color-light-green);
 }
 
 .size-m p {
@@ -113,7 +113,7 @@ main {
 .grid_container h2 {
     grid-column: -1/1;
     text-align: left;
-    color: #0B3A40;
+    color: var(--color-header-footer);
     margin-bottom: 0;
 }
 
@@ -122,22 +122,6 @@ main {
     color: white;
 }
 
-HTML CSSResult Skip Results Iframe
-EDIT ON
-.control-me::after {
-    content: "😃";
-    font-size: 100px;
-}
-#toggle:checked ~ .control-me::after {
-    content: "😩";
-}
-
-/*.visually-hidden {
-    position: absolute;
-    left: -100vw;*/
-    
-    /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
-}
 
 
 

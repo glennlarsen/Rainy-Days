@@ -1,345 +1,357 @@
 @media (max-width: 1230px) {
-    .breadcrumbs {
-        margin-left: 10px;
-    }
+  .breadcrumbs {
+    margin-left: 10px;
+  }
 
-    h1 {
-        margin-left: 10px;
-    }
+  h1 {
+    margin-left: 10px;
+  }
 
-    .history_text, .vision_text, .team_text {
-        margin: 25px;
-    } 
+  .history_text,
+  .vision_text,
+  .team_text {
+    margin: 25px;
+  }
 
-    .history_container, .vision_container, .about_box img {
-        border-radius: 0;
-    }
+  .history_container,
+  .vision_container,
+  .about_box img {
+    border-radius: 0;
+  }
 
-    .cta_cart {
-        margin-bottom: 10px;
-    }
+  .cta_cart {
+    margin-bottom: 10px;
+  }
 
-    .popup {
-        width: 60%;
-    }
+  .popup {
+    width: 60%;
+  }
 
-    .checkout-form {
-        flex-direction: column;
-    }
+  .checkout-form {
+    flex-direction: column;
+  }
 
-    .zip-city {
-        display: block;
-    }
+  .zip-city {
+    display: block;
+  }
 
-    .zip {
-        display: grid;
-        margin-right: 25px;
-    }
+  .zip {
+    display: grid;
+    margin-right: 25px;
+  }
 
-    .date-and-cvc {
-        display: block;
-    }
+  .date-and-cvc {
+    display: block;
+  }
 
-    .day, .cvc {
-        display: grid;
-        margin-left: 0;
-    }
+  .day,
+  .cvc {
+    display: grid;
+    margin-left: 0;
+  }
 
-    .form-box {
-        grid-row: 2/9;
-    }
+  .form-box {
+    grid-row: 2/9;
+  }
 
+  .month {
+    display: grid;
+  }
 }
 
 @media (max-width: 923px) {
-    .hamburger-label {
-        display: block;
-    }
-    nav ul, .nav_icons {
-        display: none;
-    }
+  .hamburger-label {
+    display: block;
+  }
+  nav ul,
+  .nav_icons {
+    display: none;
+  }
 
-    ul {
+  ul {
     margin-left: 25px;
     position: fixed;
     top: 55px;
     background: var(--color-header-footer);
     z-index: 1000;
     right: 0px;
-    }
+  }
 
-    nav li {
-        display: block;
-        padding: 20px 30px;
-    }
+  nav li {
+    display: block;
+    padding: 20px 30px;
+  }
 
-    .left_link {
-        color: white;
-    }
+  .left_link {
+    color: white;
+  }
 
-    .header-icons-mobile {
-        display: block;
-      }
+  .header-icons-mobile {
+    display: block;
+  }
 
-      .active {
-        text-decoration: underline 3px white;
-        text-underline-position: under;
-      }
+  .active {
+    text-decoration: underline 3px white;
+    text-underline-position: under;
+  }
 
-    .top-container {
-        background: url(../images/mountain_pattern.png) no-repeat bottom, linear-gradient(90deg, #ffffff 50%, #0b3a40 50%);
-    }  
+  .top-container {
+    background: url(../images/mountain_pattern.png) no-repeat bottom,
+      linear-gradient(90deg, #ffffff 50%, var(--color-header-footer)50%);
+  }
 
-    .container-left-top, .container-left-middle, .container-left-bottom {
-        margin-left: 10px; 
-        margin-right: 10px; 
-        /*margin: auto;*/ 
-    }
+  .container-left-top,
+  .container-left-middle,
+  .container-left-bottom {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-    .container-right-middle {
-        justify-content: center;
-      }
-    .collection {
-      max-width: 70%;
-    }
+  .container-right-middle {
+    justify-content: center;
+  }
+  .collection {
+    max-width: 70%;
+  }
 
-    .centered h2 {
-        font-size: large;
-    }
-    .breadcrumbs {
-        display: none;
-    }
+  .centered h2 {
+    font-size: large;
+  }
+  .breadcrumbs {
+    display: none;
+  }
 
-
-    /*About page*/
-    .history_container, .vision_container, .team_container {
+  /*About page*/
+  .history_container,
+  .vision_container,
+  .team_container {
     max-height: 45vh;
     margin-left: 0;
-    margin-right: 0; 
+    margin-right: 0;
     border-radius: 0;
-    }
+  }
 
-    .vision_container img {
-        border-radius: 0;
-    }
+  .vision_container img {
+    border-radius: 0;
+  }
 
-    .page-title {
-        display: flex;
-    }
+  .page-title {
+    display: flex;
+  }
 
-    /* Contact page and checkout form*/
+  /* Contact page and checkout form*/
 
-    .form-wrapper {
-        flex-direction: column;
-    }
+  .form-wrapper {
+    flex-direction: column;
+  }
 
-    /*Checkout page*/
+  /*Checkout page*/
 
-    .checkout-grid {
-      grid-template-columns: 60% 40%;  
-    }
+  .checkout-grid {
+    grid-template-columns: 60% 40%;
+  }
 
-    .checkout-content >* {
-      margin: 0 10px;
-    }
+  .checkout-content > * {
+    margin: 0 10px;
+  }
 
-    .form-box {
-      grid-row: 1;  
-    }
+  .form-box {
+    grid-row: 1;
+  }
 
-    /* Contact page*/
+  /* Contact page*/
 
-    .map-pin-icon {
-        height: 100px;
-    }
+  .map-pin-icon {
+    height: 100px;
+  }
 
-    .background_container {
-        padding: 20px;
-    }
+  .background_container {
+    padding: 20px;
+  }
 
-    /*product page*/
+  /*product page*/
 
-    .product-grid {
-        grid-template-columns: 45% auto;
-        grid-template-rows: auto 20%; 
-        padding: 40px 10px;
-    }
+  .product-grid {
+    grid-template-columns: 45% auto;
+    grid-template-rows: auto 20%;
+    padding: 40px 10px;
+  }
 
-    .thumbnail-column {
-        grid-row: 2;
-        display: flex;
-    }
+  .thumbnail-column {
+    grid-row: 2;
+    display: flex;
+  }
 
-    .product-info {
-        grid-row: 1/3;
-    }
-
+  .product-info {
+    grid-row: 1/3;
+  }
 }
 
+@media screen and (max-width: 640px) {
+  /*Global*/
+  .popup {
+    width: 70%;
+  }
 
-
-@media screen and (max-width: 640px){
-
-    /*Global*/
-    .popup{
-      width: 70%;
-    }
-
-    h1 {
-        text-align: center;
-    }
-    .logo-container {
+  h1 {
+    text-align: center;
+  }
+  .logo-container {
     padding-right: 10px;
-    }
+  }
 
-    .top-footer-container {
-        flex-direction: column;
-    }
+  .top-footer-container {
+    flex-direction: column;
+  }
 
-    .popup {
-        width: 90%;
-    }
-    
-    /*Home page*/
-    .container-left-top {
-        align-self: start;
-        padding-bottom: 10px;
-    }
+  .popup {
+    width: 90%;
+  }
 
-    .top-container {
-        background: url(../images/mountain_pattern.png) no-repeat bottom, white;
-    } 
+  /*Home page*/
+  .container-left-top {
+    align-self: start;
+    padding-bottom: 10px;
+  }
 
-    .grid-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 15%;
-        height: 90vh;
-    }
-  
-    .container-left-top, .container-left-middle, .container-right-middle, .container-left-bottom {
-        margin: 0 auto;
-    }
+  .top-container {
+    background: url(../images/mountain_pattern.png) no-repeat bottom, white;
+  }
 
-    .container-right-middle {
-        grid-row: 5;
-        align-items: end;
-    }
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 15%;
+    height: 90vh;
+  }
 
-    .container-right-middle h2 {
-        color:  #0b3a40;
-    }
+  .container-left-top,
+  .container-left-middle,
+  .container-right-middle,
+  .container-left-bottom {
+    margin: 0 auto;
+  }
 
-    .cta_large {
-        background: #0b3a40;
-        color: white;
-    }
+  .container-right-middle {
+    grid-row: 5;
+    align-items: end;
+  }
 
-    .container-bottom {
-        display: flex;
-        flex-direction: column;
-    }
+  .container-right-middle h2 {
+    color: var(--color-header-footer);
+  }
 
-    .container-bottom h3 {
-        align-self: center;
-    }
+  .cta_large {
+    background: var(--color-header-footer);
+    color: white;
+  }
 
-    .box {
-        margin: 0;
-    }
+  .container-bottom {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .box img {
-        border-radius: 0;
-    }
+  .container-bottom h3 {
+    align-self: center;
+  }
 
-    /*Shop page*/
-    
-    .shop-top {
-        display: flex;
-        flex-direction: column;
-    }
+  .box {
+    margin: 0;
+  }
 
-    .filters-sortby {
-        justify-content: center;
-    }
+  .box img {
+    border-radius: 0;
+  }
 
-    /*About page*/
-    .page-title{
-        justify-content: center;
-    }
+  /*Shop page*/
 
-    .history_container {
-        margin-top: 10px;
-    }
+  .shop-top {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .history_container, .vision_container, .team_container {
-        flex-direction: column;
-        max-height: fit-content;
-        border-radius: 0;
-    }
+  .filters-sortby {
+    justify-content: center;
+  }
 
-    .vision_container img {
-        border-radius: 0;
-    }
+  /*About page*/
+  .page-title {
+    justify-content: center;
+  }
 
-    /*Product page*/
+  .history_container {
+    margin-top: 10px;
+  }
 
-    .thumbnail-column {
-        display: none;
-    }
+  .history_container,
+  .vision_container,
+  .team_container {
+    flex-direction: column;
+    max-height: fit-content;
+    border-radius: 0;
+  }
 
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
+  .vision_container img {
+    border-radius: 0;
+  }
 
-    .product-info {
-        margin-left: 0;
-        grid-row: 2/4;
-    }
+  /*Product page*/
 
-    .product-info >* {
-        margin: 10px 0;
-    }
+  .thumbnail-column {
+    display: none;
+  }
 
-    .price-star-inline {
-        display: block;
-    }
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .info-jacket {
-        margin-right: 0;
-        margin-left: 10px;
-    }
+  .product-info {
+    margin-left: 0;
+    grid-row: 2/4;
+  }
 
-    /*Checkout page */
+  .product-info > * {
+    margin: 10px 0;
+  }
 
-    .checkout-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: none;
-    }
+  .price-star-inline {
+    display: block;
+  }
 
-    .checkout-list {
-        grid-row: 3;
-    }
+  .info-jacket {
+    margin-right: 0;
+    margin-left: 10px;
+  }
 
-    .checkout-content {
-        display: flex;
-        flex-direction: column-reverse;
-        height: fit-content;
-    }
+  /*Checkout page */
 
-    .confirm-button a {
-        position: static;
-    }
+  .checkout-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
 
-    .confirm-button {
-        padding: 10px;
-    }
+  .checkout-list {
+    grid-row: 3;
+  }
 
-    .checkout-form {
-        border-radius: 0;
-    }
+  .checkout-content {
+    display: flex;
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
 
-    .checkout-form h2 {
-        text-align: center;
-    }
+  .confirm-button a {
+    position: static;
+  }
+
+  .confirm-button {
+    padding: 10px;
+  }
+
+  .checkout-form {
+    border-radius: 0;
+  }
+
+  .checkout-form h2 {
+    text-align: center;
+  }
 }
-    

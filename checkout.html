@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Checkout section for your Rainy Days shopping cart." />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/checkout.css">
-    <link rel="stylesheet" href="css/media.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/adec9b814a.js" crossorigin="anonymous"></script>
-    <title>Rainy Days | Checkout</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo-container">
-          <a href="index.html" class="logo_link">
-        <img src="images/logo.png" alt="Rainy Days Logo" class="logo">
-      </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Checkout section for your Rainy Days shopping cart." />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/checkout.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/adec9b814a.js" crossorigin="anonymous"></script>
+  <title>Rainy Days | Checkout</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <a href="index.html" class="logo_link">
+          <img src="images/logo.png" alt="Rainy Days Logo" class="logo">
+        </a>
       </div>
       <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
       <input type="checkbox" id="hamburger-menu">
-        <ul>
-          <li><a href="index.html" class="left_link">Home</a></li>
-          <li><a href="shop.html" class="left_link">Shop</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li class="header-icons-mobile"><a href="checkout.html"><i class="fas fa-shopping-cart cart header-icons icon-active"></i></a></li>
-          <li class="header-icons-mobile"><i class="fas fa-user profile header-icons"></i></li>
-        </ul>
-        <div class="nav_icons">
+      <ul>
+        <li><a href="index.html" class="left_link">Home</a></li>
+        <li><a href="shop.html" class="left_link">Shop</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="header-icons-mobile"><a href="checkout.html"><i
+              class="fas fa-shopping-cart cart header-icons icon-active"></i></a></li>
+        <li class="header-icons-mobile"><i class="fas fa-user profile header-icons"></i></li>
+      </ul>
+      <div class="nav_icons">
         <a href="checkout.html"><i class="fas fa-shopping-cart cart header-icons icon-active"></i></a>
         <i class="fas fa-user profile header-icons"></i>
       </div>
-      </nav>
-      </header>
-    <main>
-      <div class="checkout-grid">
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item">
-            <a href="javascript:history.back()" class="breadcrumbs__link breadcrumbs__link--active">Back</a>
-          </li>
-        </ul>
-        <form method="post" class="form-box">
+    </nav>
+  </header>
+  <main>
+    <div class="checkout-grid">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a href="javascript:history.back()" class="breadcrumbs__link breadcrumbs__link--active">Back</a>
+        </li>
+      </ul>
+      <form method="post" class="form-box">
         <div class="form-wrapper checkout-form">
           <section class="info">
             <h2>shipping info</h2>
@@ -58,13 +61,13 @@
             <input type="text" id="street" name="street">
             <div class="zip-city">
               <div class="zip">
-              <label for="zip">Postal Code</label>
-              <input type="number" id="zip" name="zip">
-            </div>
-            <div class="city">
-              <label for="city">City</label>
-              <input type="text" id="city" name="city">
-            </div>
+                <label for="zip">Postal Code</label>
+                <input type="number" id="zip" name="zip">
+              </div>
+              <div class="city">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+              </div>
             </div>
           </section>
           <section class="pay">
@@ -76,114 +79,114 @@
             <label for="card-number">Card Number</label>
             <input type="number" id="card-number" name="card-number" placeholder="00** **** **** **00">
             <div class="date-and-cvc">
-            <div class="day">
-              <label for="exp">Expires Date</label>
-            <input type="number" min="1" max="31" id="exp" name="day" placeholder="day">
-          </div>
-          <div class="month">
-            <input type="number" min="1" max="12" id="exp" name="month" placeholder="month">
-          </div>
-        <div class="cvc">
-          <label for="cvc">CVC</label>
-          <input type="number" max="999" id="cvc" name="cvc" placeholder="...">
-        </div>
-      </div>
+              <div class="day">
+                <label for="exp">Expires Date</label>
+                <input type="number" min="1" max="31" id="exp" name="day" placeholder="day">
+              </div>
+              <div class="month">
+                <input type="number" min="1" max="12" id="exp" name="month" placeholder="month">
+              </div>
+              <div class="cvc">
+                <label for="cvc">CVC</label>
+                <input type="number" max="999" id="cvc" name="cvc" placeholder="...">
+              </div>
+            </div>
           </section>
         </div>
       </form>
-        <section class="checkout-list">
-          <div class="checkout-content">
-             <p class="item-count">1 item</p>
-             <span class="line"></span>
-             <div class="item">
-              <div class="image">
-                <img src="images/orange-jacket-spesific/orange-checkout.png" alt="Women's orange jacket">
-              </div>
-              <div class="info-jacket">
-                <h4>women's orange jacket</h4>
-                <p><span>color:</span> light orange</p>
-                <p><span>size:</span> m</p>
-                <p>3 699 kr</p>
-              </div>
-              <div class="trash">
-                <i class="fas fa-trash-alt"></i>
-              </div>
-             </div>
-             <span class="line"></span>
-             <div class="price-info">
-               <div>
-                 <p>price</p>
-                 <p>3 699 kr</p>
-               </div>
-               <div>
-                 <p>delivery</p>
-                 <p>50 kr</p>
-               </div>
-               <div>
-                 <p>total</p>
-                 <p>3 749 kr</p>
-               </div>
-             </div>
-             <div class="confirm-button">
-             <a href="#confirmation" class="cta cta_green cta_large">confirm and pay</a>
+      <section class="checkout-list">
+        <div class="checkout-content">
+          <p class="item-count">1 item</p>
+          <span class="line"></span>
+          <div class="item">
+            <div class="image">
+              <img src="images/orange-jacket-spesific/orange-checkout.png" alt="Women's orange jacket">
             </div>
+            <div class="info-jacket">
+              <h4>women's orange jacket</h4>
+              <p><span>color:</span> light orange</p>
+              <p><span>size:</span> m</p>
+              <p>3 699 kr</p>
             </div>
-        </section>
-      </div>
-      <div id="confirmation" class="overlay">
-        <div class="popup">
-          <a class="close" href="#">&times;</a>
-          <div class="content">
-            <h2>your order #45610 has 
-              been successfully processed!
-              </h2>
-            <p>an order confirmation has been sent to your email.</p>
-            <p>you can view your order history by going to 
-              my orders in your profile.</p>
-              <div class="checked">
-              <i class="fas fa-check"></i>
-              <div class="popup-button">
+            <div class="trash">
+              <i class="fas fa-trash-alt"></i>
+            </div>
+          </div>
+          <span class="line"></span>
+          <div class="price-info">
+            <div>
+              <p>price</p>
+              <p>3 699 kr</p>
+            </div>
+            <div>
+              <p>delivery</p>
+              <p>50 kr</p>
+            </div>
+            <div>
+              <p>total</p>
+              <p>3 749 kr</p>
+            </div>
+          </div>
+          <div class="confirm-button">
+            <a href="#confirmation" class="cta cta_green cta_large">confirm and pay</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="confirmation" class="overlay">
+      <div class="popup">
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <h2>your order #45610 has
+            been successfully processed!
+          </h2>
+          <p>an order confirmation has been sent to your email.</p>
+          <p>you can view your order history by going to
+            my orders in your profile.</p>
+          <div class="checked">
+            <i class="fas fa-check"></i>
+            <div class="popup-button">
               <a href="shop.html" class="cta cta_green cta_large">continue shopping</a>
-            </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <footer>
+    </div>
+  </main>
+  <footer>
     <div class="top-footer">
       <div class="top-footer-container">
-      <div class="footer_links">
-        <p>rainy days</p>
-      <a href="about.html">about us</a>
-      <a href="contact.html">contact</a>
-      <a href="shop.html">shop</a>
-    </div>
-    <div class="social_icons">
-      <div class="social_container">
-        <i class="fab fa-facebook-f"></i>
+        <div class="footer_links">
+          <p>rainy days</p>
+          <a href="about.html">about us</a>
+          <a href="contact.html">contact</a>
+          <a href="shop.html">shop</a>
+        </div>
+        <div class="social_icons">
+          <div class="social_container">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="social_container">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="social_container">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="newsletter-box">
+          <div>
+            <p>Subscribe to our newsletter</p>
+          </div>
+          <div class="input_and_button">
+            <div>
+              <input type="email" id="email" name="email" placeholder="email address">
+            </div>
+            <div class="ok_button">
+              <a href="checkout.html">ok</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="social_container">
-        <i class="fab fa-twitter"></i>
-      </div>
-      <div class="social_container">
-        <i class="fab fa-instagram"></i>
-      </div>
-    </div>
-    <div class="newsletter-box">
-      <div>
-      <p>Subscribe to our newsletter</p>
-    </div>
-    <div class="input_and_button">
-    <div>
-        <input type="email" id="email" name="email" placeholder="email address">
-    </div>
-    <div class="ok_button">
-      <a href="checkout.html">ok</a>
-    </div>
-  </div>
-    </div>
-    </div>
     </div>
     <div class="bottom-footer">
       <div class="bottom-footer-content">
@@ -191,5 +194,5 @@
       </div>
     </div>
   </footer>
-  </body>
+</body>
 </html>
