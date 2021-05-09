@@ -5,8 +5,9 @@ main {
 .top-container {
   background: url("../images/man.png"), url("../images/mountain_pattern.png"),
     linear-gradient(90deg, #ffffff 50%, var(--color-header-footer) 50%);
-  background-repeat: no-repeat, no-repeat;
-  background-position: center top, right bottom;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
 }
 
 .grid-container {
@@ -37,7 +38,6 @@ main {
   display: grid;
   max-width: 330px;
   grid-template-columns: repeat(7, 1fr);
-  height: 20vh;
   background: var(--color-light-green);
   border-radius: 8px;
   box-shadow: 0px 4px 8px 4px grey;
