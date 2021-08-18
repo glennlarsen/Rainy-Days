@@ -1,4 +1,4 @@
-@import "imports/variables.css";
+
 
 /*Global, logo + nav*/
 a {
@@ -96,12 +96,12 @@ a {
   }
   
   .cta_yellow {
-    grid-column: 5/8;
+    grid-column: 4/8;
     grid-row: 4/5;
   }
   
   .cta_pink {
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 4/5;
   }
   

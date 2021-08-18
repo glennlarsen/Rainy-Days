@@ -8,15 +8,15 @@ main {
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
+    padding-bottom: 20px;
 }
 
 .grid-container {
   display: grid;
-  height: 70vh;
   max-width: 1200px;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 30% 35% 35%;
+  row-gap: 20px;
 }
 
 .container-left-top {
@@ -64,22 +64,22 @@ main {
 }
 
 .featured_box img {
-  grid-column: 1/5;
+  grid-column: 1/4;
   grid-row: 1/6;
   border-radius: 8px;
 }
 
 .featured_box2 img {
-  grid-column: 4/8;
+  grid-column: 5/8;
 }
 
 .featured_text {
-  grid-column: 5/8;
+  grid-column: 4/8;
   color: white;
   margin: 0 auto;
 }
 .featured_text2 {
-  grid-column: 1/4;
+  grid-column: 1/5;
 }
 
 .featured_box h3 {

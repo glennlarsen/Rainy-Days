@@ -36,3 +36,14 @@ main {
   align-items: center;
   justify-content: space-around;
 }
+
+.cart-box {
+  border: 1px solid green;
+  max-width: 600px;
+  min-width: 200px;
+  padding: 20px;
+  margin: auto;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+}

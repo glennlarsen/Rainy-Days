@@ -41,6 +41,18 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.8rem;
+}
+
+.form-succes {
+  display: none;
+  color: green;
+  font-size: 0.8rem;
+}
 /*Header and Nav*/
 header {
   display: block;
@@ -398,4 +410,9 @@ input:focus::placeholder {
 
 .info-jacket {
   margin-right: 10px;
+}
+
+/*Cart*/
+.cart-box {
+  position: fixed;
 }
