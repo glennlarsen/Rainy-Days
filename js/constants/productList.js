@@ -1,4 +1,4 @@
-export const productArray = [
+//export const productArray = [
     {
         name: "Women's Orange Jacket",
         description: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Phasellus Bibendum Velit Vel Ipsum Sollicitudin Accumsan. Aliquam Quis Dictum Orci, Ac Pellentesque Libero. Fusce Nec Sem Neque. Donec Ac Justo Magna. Orci Varius Natoque Penatibus Et Magnis Dis Parturient Montes, Nascetur Ridiculus Mus.",

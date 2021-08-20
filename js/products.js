@@ -1,4 +1,4 @@
-import { productArray } from "./constants/productList.js";
+//import { productArray } from "./constants/productList.js";
 const productsContainer = document.querySelector(".grid_container");
 
 

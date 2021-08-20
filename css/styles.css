@@ -287,7 +287,7 @@ input:focus::placeholder {
 
 /* Product grid and products styling used in shop and product page*/
 
-.grid_container {
+.grid_container, .grid_container2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(287px, 1fr));
   gap: 10px;
