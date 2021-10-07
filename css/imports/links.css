@@ -38,13 +38,13 @@ a {
   .footer_links p {
     font-weight: bolder;
     color: white;
-    font-size: large;
+    font-size: 20px;
     text-transform: capitalize;
   }
   
   .footer_links a {
     text-transform: capitalize;
-    font-size: small;
+    font-size: 15px;
     font-weight: lighter;
     line-height: 1.7;
     font-weight: 300;

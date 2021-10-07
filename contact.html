@@ -1,153 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Do you need help or more information? Use our contact form or contact information to get in touch with us directly. Rainy Days are always ready to help." />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <script src="https://kit.fontawesome.com/adec9b814a.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/contact.css">
-  <link rel="stylesheet" href="css/media.css">
-  <title>Rainy Days | Contact</title>
-  <!-- Hotjar Tracking Code for https://silly-benz-3393db.netlify.app/ -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:2391347,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo-container">
-        <a href="index.html" class="logo_link">
-          <img src="images/logo.png" alt="Rainy Days Logo" class="logo">
-        </a>
-      </div>
-      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
-      <input type="checkbox" id="hamburger-menu">
-      <ul>
-        <li><a href="index.html" class="left_link">Home</a></li>
-        <li><a href="shop.html" class="left_link">Shop</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html" class="active active_right_nav">Contact</a></li>
-        <li class="header-icons-mobile"><a href="checkout.html"><i
-              class="fas fa-shopping-cart cart header-icons"></i></a></li>
-        <li class="header-icons-mobile"><i class="fas fa-user profile header-icons"></i></li>
-      </ul>
-      <div class="nav_icons">
-        <a href="checkout.html"><i class="fas fa-shopping-cart cart header-icons"></i></a>
-        <i class="fas fa-user profile header-icons"></i>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <div class="breadcrumb_title">
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a href="index.html" class="breadcrumbs__link">Home</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a href="contact.html" class="breadcrumbs__link breadcrumbs__link--active">Contact</a>
-        </li>
-      </ul>
-      <div class="page-title">
-        <h1>contact</h1>
-      </div>
-    </div>
-    <div class="background_container">
-      <div class="content_container">
-        <form id="contactForm">
-          <div class="form-wrapper">
-            <section>
-              <h3>we'd love to hear from you</h3>
-              <div class="form-succes" id="formSucces">Your message has been sent! We will contact you soon.</div>
-                 <label for="name">Name</label>
-                 <input type="text" id="name" name="name">
-                 <div class="form-error" id="nameError">Please enter your name</div>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email">
-              <div class="form-error" id="emailError">Please enter a valid email address</div>
-              <label for="message">Message</label>
-              <textarea name="message" id="message"></textarea>
-              <div class="form-error" id="messageError">Please enter a message (Minimum 10 characters)</div>
-              <button type="submit" class="cta cta_large cta_green">Send</button> 
-            </section>
-            <section>
-              <div class="contact-info">
-                <span class="icon phone-icon">
-                  <p>+47 555 55 555 / +47 999 99 999</p>
-                </span>
-                <span class="icon chat-icon">
-                  <p>Click to Chat</p>
-                </span>
-                <span class="icon map-pin-icon">
-                  <p>Vestre Holbergsallmenningen</p>
-                  <p>5011, Bergen</p>
-                  <p>Norway</p>
-                </span>
-              </div>
-              <div class="map">
-                <img src="patterns/map.png" alt="Map with location to find Rainy Days">
-              </div>
-            </section>
-          </div>
-        </form>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div class="top-footer">
-      <div class="top-footer-container">
-        <div class="footer_links">
-          <p>rainy days</p>
-          <a href="about.html">about us</a>
-          <a href="contact.html">contact</a>
-          <a href="shop.html">shop</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Do you need help or more information? Use our contact form or contact information to get in touch with us directly. Rainy Days are always ready to help."
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/adec9b814a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>Rainy Days | Contact</title>
+    <!-- Hotjar Tracking Code for https://silly-benz-3393db.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2391347, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <a href="index.html" class="logo_link">
+            <img src="images/logo.png" alt="Rainy Days Logo" class="logo" />
+          </a>
         </div>
-        <div class="social_icons">
-          <div class="social_container">
-            <i class="fab fa-facebook-f"></i>
-          </div>
-          <div class="social_container">
-            <i class="fab fa-twitter"></i>
-          </div>
-          <div class="social_container">
-            <i class="fab fa-instagram"></i>
-          </div>
+        <label class="hamburger-label" for="hamburger-menu"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <input type="checkbox" id="hamburger-menu" />
+        <ul>
+          <li><a href="index.html" class="left_link">Home</a></li>
+          <li><a href="shop.html" class="left_link">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li>
+            <a href="contact.html" class="active active_right_nav">Contact</a>
+          </li>
+          <li class="header-icons-mobile">
+            <a href="checkout.html"
+              ><i class="fas fa-shopping-cart cart header-icons"></i
+            ></a>
+          </li>
+          <li class="header-icons-mobile">
+            <i class="fas fa-user profile header-icons"></i>
+          </li>
+        </ul>
+        <div class="nav_icons">
+          <a href="checkout.html"
+            ><i class="fas fa-shopping-cart cart header-icons"></i
+          ></a>
+          <i class="fas fa-user profile header-icons"></i>
         </div>
-        <div class="newsletter-box">
-          <div>
-            <p>Subscribe to our newsletter</p>
+      </nav>
+    </header>
+    <main>
+      <div class="breadcrumb_title">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="index.html" class="breadcrumbs__link">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a
+              href="contact.html"
+              class="breadcrumbs__link breadcrumbs__link--active"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="page-title">
+          <h1>contact</h1>
+        </div>
+      </div>
+      <div class="background_container">
+        <div class="content_container">
+          <form id="contactForm">
+            <div class="form-wrapper">
+              <section>
+                <h3>we'd love to hear from you</h3>
+                <div class="form-succes" id="formSucces">
+                  Your message has been sent! We will contact you soon.
+                </div>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                />
+                <div class="form-error" id="nameError">
+                  Please enter your name
+                </div>
+                <label for="email">Email</label>
+                <input autocomplete="off" type="email" id="email" name="email" />
+                <div class="form-error" id="emailError">
+                  Please enter a valid email address
+                </div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+                <div class="form-error" id="messageError">
+                  Please enter a message (Minimum 10 characters)
+                </div>
+                <button disabled type="submit" id="button" class="cta cta_large cta_green">
+                  Send
+                </button>
+              </section>
+              <section>
+                <div class="contact-info">
+                  <span class="icon phone-icon">
+                    <p>+47 555 55 555 / +47 999 99 999</p>
+                  </span>
+                  <span class="icon chat-icon">
+                    <p>Click to Chat</p>
+                  </span>
+                  <span class="icon map-pin-icon">
+                    <p>Vestre Holbergsallmenningen</p>
+                    <p>5011, Bergen</p>
+                    <p>Norway</p>
+                  </span>
+                </div>
+                <div class="map">
+                  <img
+                    src="patterns/map.png"
+                    alt="Map with location to find Rainy Days"
+                  />
+                </div>
+              </section>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="top-footer">
+        <div class="top-footer-container">
+          <div class="footer_links">
+            <p>rainy days</p>
+            <a href="about.html">about us</a>
+            <a href="contact.html">contact</a>
+            <a href="shop.html">shop</a>
           </div>
-          <div class="input_and_button">
+          <div class="social_icons">
+            <div class="social_container">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="social_container">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="social_container">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+          <div class="newsletter-box">
             <div>
-              <input type="email" id="emailNewsletter" name="email" placeholder="email address">
+              <p>Subscribe to our newsletter</p>
             </div>
-            <div class="ok_button">
-              <a href="contact.html">ok</a>
+            <div class="input_and_button">
+              <div>
+                <input
+                  type="email"
+                  id="emailNewsletter"
+                  name="email"
+                  placeholder="email address"
+                />
+              </div>
+              <div class="ok_button">
+                <a href="contact.html">ok</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="bottom-footer">
-      <div class="bottom-footer-content">
-        <p class="copyright">Copyright &copy; 2020 Rainy Days. All rights reserved</p>
+      <div class="bottom-footer">
+        <div class="bottom-footer-content">
+          <p class="copyright">
+            Copyright &copy; 2020 Rainy Days. All rights reserved
+          </p>
+        </div>
       </div>
-    </div>
-  </footer>
-  
-  <script src="js/contact.js"></script>
-</body>
+    </footer>
+
+    <script src="js/contact.js"></script>
+  </body>
 </html>

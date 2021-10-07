@@ -1,255 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Women's Orange jacket is a fantastic product, exspecially for hiking and heavy rain days. It is also warm and comfortable if you are planning to use it in the early winter." />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/product.css">
-  <link rel="stylesheet" href="css/media.css">
-  <script src="https://kit.fontawesome.com/adec9b814a.js" crossorigin="anonymous"></script>
-  <title>Rainy Days | Women's Orange Jacket</title>
-  <!-- Hotjar Tracking Code for https://silly-benz-3393db.netlify.app/ -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:2391347,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo-container">
-        <a href="index.html" class="logo_link">
-          <img src="images/logo.png" alt="Rainy Days Logo" class="logo">
-        </a>
-      </div>
-      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
-      <input type="checkbox" id="hamburger-menu">
-      <ul>
-        <li><a href="index.html" class="left_link">Home</a></li>
-        <li><a href="shop.html" class="active left_link">Shop</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="header-icons-mobile"><a href="checkout.html"><i
-              class="fas fa-shopping-cart cart header-icons"></i></a></li>
-        <li class="header-icons-mobile"><i class="fas fa-user profile header-icons"></i></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Women's Orange jacket is a fantastic product, exspecially for hiking and heavy rain days. It is also warm and comfortable if you are planning to use it in the early winter."
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <script
+      src="https://kit.fontawesome.com/adec9b814a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rainy Days | Women's Orange Jacket</title>
+    <!-- Hotjar Tracking Code for https://silly-benz-3393db.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2391347, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <a href="index.html" class="logo_link">
+            <img src="images/logo.png" alt="Rainy Days Logo" class="logo" />
+          </a>
+        </div>
+        <label class="hamburger-label hamburger-label-product" for="hamburger-menu"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <input type="checkbox" id="hamburger-menu" />
+        <ul>
+          <li><a href="index.html" class="left_link">Home</a></li>
+          <li><a href="shop.html" class="active left_link">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav_icons nav_icons-product">
+          <button class="cart-button">
+            <i class="fas fa-shopping-cart cart header-icons"></i>
+            <div class="total-items-in-cart"></div>
+          </button>
+          <div class="cart-container">
+            <div class="cart-header">
+                <div class="column1">Item</div>
+                <div class="column2">Unit price</div>
+                <div class="column3">Units</div>
+            </div>
+            <div class="cart-items">
+                <!-- render cart items here -->
+            </div>
+            <div class="cart-footer">
+                <div class="subtotal">
+                </div>
+                <a href="checkout.html" class="checkout">
+                    Proceed to checkout
+                </a>
+            </div>
+        </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link">Home</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="shop.html" class="breadcrumbs__link">Shop</a>
+        </li>
+        <li class="breadcrumbs__item breadcrumb_jacket"></li>
       </ul>
-      <div class="nav_icons">
-        <a href="checkout.html"><i class="fas fa-shopping-cart cart header-icons"></i></a>
-        <i class="fas fa-user profile header-icons"></i>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <ul class="breadcrumbs">
-      <li class="breadcrumbs__item">
-        <a href="index.html" class="breadcrumbs__link">Home</a>
-      </li>
-      <li class="breadcrumbs__item">
-        <a href="shop.html" class="breadcrumbs__link">Shop</a>
-      </li>
-      <li class="breadcrumbs__item breadcrumb_jacket">
-        
-      </li>
-    </ul>
-    <section class="product-grid">
-    <!--  <div class="thumbnail-column">
-        <div>
-          <img src="images/orange-jacket-spesific/orange-small.png" alt="Thumnails of women's orange jacket">
-        </div>
-        <div>
-          <img src="images/orange-jacket-spesific/orange-small.png" alt="Thumnails of women's orange jacket">
-        </div>
-        <div>
-          <img src="images/orange-jacket-spesific/orange-small.png" alt="Thumnails of women's orange jacket">
-        </div>
-        <div>
-          <img src="images/orange-jacket-spesific/orange-small.png" alt="Thumnails of women's orange jacket">
+      <section class="product-grid"></section>
+      <h2>you may also like</h2>
+      <section class="grid_container2"></section>
+      <div id="confirmation" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <div class="content"></div>
         </div>
       </div>
-      <div class="product-image">
-        <img src="images/orange-jacket-spesific/orange-main.png" alt="Large image of women's orange jacket">
-      </div>
-      <div class="product-info">
-        <h1>women's orange jacket</h1>
-        <div class="price-star-inline">
-          <p>3 699 Kr</p>
-          <div class="star-rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
+    </main>
+    <footer>
+      <div class="top-footer">
+        <div class="top-footer-container">
+          <div class="footer_links">
+            <p>rainy days</p>
+            <a href="about.html">about us</a>
+            <a href="contact.html">contact</a>
+            <a href="shop.html">shop</a>
           </div>
-        </div>
-        <div class="color-container">
-          <p><span class="light-orange">color:</span> light orange</p>
-          <div class="color-picker">
-            <div class="color-box pick-orange"></div>
-            <div class="color-box pick-black"></div>
-            <div class="color-box pick-blue"></div>
-          </div>
-        </div>
-        <div class="size-container">
-          <p><span class="m">size:</span> m</p>
-          <div class="size-picker">
-            <div class="size-box size-s">
-              <p>S</p>
+          <div class="social_icons">
+            <div class="social_container">
+              <i class="fab fa-facebook-f"></i>
             </div>
-            <div class="size-box size-m">
-              <p>M</p>
+            <div class="social_container">
+              <i class="fab fa-twitter"></i>
             </div>
-            <div class="size-box size-l">
-              <p>L</p>
-            </div>
-            <div class="size-box size-xl">
-              <p>XL</p>
+            <div class="social_container">
+              <i class="fab fa-instagram"></i>
             </div>
           </div>
-        </div>
-        <button class="cta cta_large cta_green cta_cart"><a href="#confirmation"><i class="fas fa-shopping-cart"></i>
-          add to cart</a></button>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum velit vel ipsum sollicitudin
-          accumsan.
-          Aliquam quis dictum orci, ac pellentesque libero. Fusce nec sem neque. Donec ac justo magna.
-          Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div> -->
-    </section>
-    <h2>you may also like</h2>
-    <section class="grid_container2">
-      <!--<div class="products">
-        <a href="product.html">
-          <div>
-            <img src="images/jackets/pink-rain-jacket.png" alt="Pink rain jacket">
-          </div>
-          <h4>Womens's Pink Jacket</h4>
-          <p>1 499 Kr</p>
-          <div class="star-rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </a>
-      </div>
-      <div class="products">
-        <a href="product.html">
-          <div>
-            <img src="images/jackets/black-and-yellow rain-jacket.png" alt="Black and yellow rain jacket">
-          </div>
-          <h4>Black and Yellow Jacket</h4>
-          <p>1 199 Kr</p>
-          <div class="star-rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </a>
-      </div>
-      <div class="products">
-        <a href="product.html">
-          <div>
-            <img src="images/jackets/blue-rain-jacket.png" alt="Blue rain jacket">
-          </div>
-          <h4>Men's Blue Navy Jacket</h4>
-          <p>2 399 Kr</p>
-          <div class="star-rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </a>
-      </div>
-      <div class="products">
-        <a href="product.html">
-          <div>
-            <img src="images/jackets/green-rain-jacket.png" alt="Green rain jacket">
-          </div>
-          <h4>Men's Green Jacket</h4>
-          <p>1 699 Kr</p>
-          <div class="star-rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-        </a>
-      </div>-->
-    </section>
-    <div id="confirmation" class="overlay">
-      <div class="popup">
-        <a class="close" href="#">&times;</a>
-        <div class="content">
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div class="top-footer">
-      <div class="top-footer-container">
-        <div class="footer_links">
-          <p>rainy days</p>
-          <a href="about.html">about us</a>
-          <a href="contact.html">contact</a>
-          <a href="shop.html">shop</a>
-        </div>
-        <div class="social_icons">
-          <div class="social_container">
-            <i class="fab fa-facebook-f"></i>
-          </div>
-          <div class="social_container">
-            <i class="fab fa-twitter"></i>
-          </div>
-          <div class="social_container">
-            <i class="fab fa-instagram"></i>
-          </div>
-        </div>
-        <div class="newsletter-box">
-          <div>
-            <p>Subscribe to our newsletter</p>
-          </div>
-          <div class="input_and_button">
+          <div class="newsletter-box">
             <div>
-              <input type="email" id="email" name="email" placeholder="email address">
+              <p>Subscribe to our newsletter</p>
             </div>
-            <div class="ok_button">
-              <a href="product.html">ok</a>
+            <div class="input_and_button">
+              <div>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="email address"
+                />
+              </div>
+              <div class="ok_button">
+                <a href="product.html">ok</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="bottom-footer">
-      <div class="bottom-footer-content">
-        <p class="copyright">Copyright &copy; 2020 Rainy Days. All rights reserved</p>
+      <div class="bottom-footer">
+        <div class="bottom-footer-content">
+          <p class="copyright">
+            Copyright &copy; 2020 Rainy Days. All rights reserved
+          </p>
+        </div>
       </div>
-    </div>
-  </footer>
-<!--<div class="cart-box">
+    </footer>
+    <!--<div class="cart-box">
   <div class="cart-list"></div>
   <div class="total">Total:</div>
   <a href="cart.html">Checkout</a>
 </div> -->
-<script src="js/components/displayError.js"></script>
-<script src="js/script.js"></script>
-  <script src="js/product.js" type="module"></script>
-  <script src="js/featured.js" type="module"></script>
-</body>
+    <script src="js/components/displayError.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/product.js" type="module"></script>
+    <script src="js/featured.js" type="module"></script>
+    <script src="js/cart.js"></script>
+  </body>
 </html>

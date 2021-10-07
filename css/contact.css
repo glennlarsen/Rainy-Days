@@ -100,3 +100,11 @@ input, textarea{
 .cta_green {
   margin-top: 10px;
 }
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+#button {
+  opacity: .4;
+}

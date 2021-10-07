@@ -8,7 +8,7 @@ main {
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 .grid-container {
@@ -16,7 +16,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;
-  row-gap: 20px;
+  row-gap: 30px;
 }
 
 .container-left-top {

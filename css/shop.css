@@ -22,9 +22,10 @@ main {
 .filter-box {
   margin: 15px;
   border: solid 1px var(--color-light-green);
-  height: fit-content;
   border-radius: 8px;
   width: 200px;
+  background-color: white;
+  color: var(--color-light-green);
 }
 
 .filter-box:hover {

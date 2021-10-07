@@ -62,11 +62,27 @@
 @media (max-width: 923px) {
   .hamburger-label {
     display: block;
+    cursor: pointer;
   }
+
+  .hamburger-label-product {
+    margin-left: 300px;
+  }
+
   nav ul,
   .nav_icons {
     display: none;
   }
+
+  .nav_icons-product {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .cart-container {
+    right: -10px;
+    width: 350px;
+}
 
   ul {
     margin-left: 25px;
@@ -97,7 +113,7 @@
 
   .top-container {
     background: url(../images/mountain_pattern.png) no-repeat bottom,
-      linear-gradient(90deg, #ffffff 50%, var(--color-header-footer)50%);
+      linear-gradient(90deg, #ffffff 50%, var(--color-header-footer) 50%);
   }
 
   .container-left-top,
@@ -111,7 +127,7 @@
     justify-content: center;
   }
   .collection {
-    max-width: 70%;
+    max-width: 73%;
   }
 
   .centered h2 {
@@ -216,6 +232,7 @@
 
   .top-container {
     background: url(../images/mountain_pattern.png) no-repeat bottom, white;
+    padding-bottom: 20px;
   }
 
   /*.grid-container {
@@ -228,7 +245,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 20% 25% 25%;
     height: 100%;
-    padding-bottom:70px;
+    padding-bottom: 70px;
     gap: 20px;
   }
 
@@ -307,6 +324,10 @@
   }
 
   /*Product page*/
+
+  .hamburger-label-product {
+    margin-left: 50px;
+  }
 
   .thumbnail-column {
     display: none;

@@ -11,6 +11,7 @@ async function getProducts() {
 
     createHtml(product);
 
+
   } catch (error) {
     productsContainer.innerHTML = displayError(
       "An error occured when calling the API"
@@ -56,9 +57,14 @@ function createHtml(product) {
       </div>
       
       `;
+
   }
 
 
 }
 
 getProducts();
+
+
+
+

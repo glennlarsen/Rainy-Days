@@ -1,10 +1,17 @@
-//import { productArray } from "./constants/productList.js";
+
 const detailContainer = document.querySelector(".product-grid");
 const extraContainer = document.querySelector(".grid_container")
 const totalContainer = document.querySelector(".total");
 const title = document.title;
 const breadcrumbContainer = document.querySelector(".breadcrumb_jacket")
 const popupContainer = document.querySelector(".content");
+const cartButton = document.querySelector(".cart-button");
+const cartList = document.querySelector(".cart-container");
+
+
+const subTotal = document.querySelector(".subtotal");
+const cartItems = document.querySelector(".cart-items");
+const totalItemsInCart = document.querySelector(".total-items-in-cart");
 
 
 
@@ -21,20 +28,22 @@ const url = "https://rainydays.flopow.eu/wp-json/wc/store/products/" + id;
 
 console.log(url);
 
-async function fetchproduct() {
+async function fetchProduct() {
 
   try {
-      const response = await fetch(url);
-      const data = await response.json();
-      const details = data;
+    const response = await fetch(url);
+    const data = await response.json();
+    const details = data;
 
-      console.log(details);
+    console.log(details);
 
-      createHtml(details);
+    createHtml(details);
+
+
   }
-  catch(error) {
-      console.log(error);
-      detailContainer.innerHTML = displayError("An error has occured");
+  catch (error) {
+    console.log(error);
+    detailContainer.innerHTML = displayError("An error has occured");
   }
 }
 
@@ -45,25 +54,25 @@ function createHtml(details) {
 
 
   let starRating = '';
-for (let i = 0; i < details.average_rating; i++) {
+  for (let i = 0; i < details.average_rating; i++) {
 
     starRating += `
     <i class="fa fa-star"></i>`;
 
-}
+  }
 
-for (let i = 0; i < 5 - details.average_rating; i++) {
+  for (let i = 0; i < 5 - details.average_rating; i++) {
 
     starRating += `
     <i class="far fa-star"></i>`;
 
-}
+  }
 
-breadcrumbContainer.innerHTML = `<p class="breadcrumbs__link breadcrumbs__link--active">${details.name}</p>`;
+  breadcrumbContainer.innerHTML = `<p class="breadcrumbs__link breadcrumbs__link--active">${details.name}</p>`;
 
 
 
-detailContainer.innerHTML =
+  detailContainer.innerHTML =
 
     `
         <div class="thumbnail-column">
@@ -116,14 +125,14 @@ detailContainer.innerHTML =
             </div>
           </div>
         </div>
-        <button class="cta cta_large cta_green cta_cart" data-product="${details.id}"><a href="#confirmation"><i class="fas fa-shopping-cart"></i>
-          add to cart</a></button>
+        <button class="cta cta_large cta_green cta_cart" data-product="${details.id}"><i class="fas fa-shopping-cart"></i>
+          add to cart</button> <div class="added-hide">Added to Cart!</div>
         <p>${details.description}</p>
       </div>
         
         `
-        popupContainer.innerHTML =
-        ` <div class="content">
+  popupContainer.innerHTML =
+    ` <div class="content">
         <h2>item successfully added to cart!</h2>
         <p class="item-count">1 item</p>
         <span class="line"></span>
@@ -148,11 +157,156 @@ detailContainer.innerHTML =
       </div>
       `
 
-        
+  //Cart array
+  let cart = JSON.parse(localStorage.getItem("CART")) || [];
+  updateCart();
+
+  const addConfirmation = document.querySelector(".added-hide");
+  const addToCartButton = document.querySelector(".cta_cart");
+  addToCartButton.onclick = function () {
+    // check if product already exist in cart 
+    //check if product exist in cart
+    if (cart.some((item) => item.id === details.id)) {
+      changeNumberOfUnits("plus", details.id);
+      addConfirmation.style.opacity = "1";
+      setTimeout(function() {
+        addConfirmation.style.opacity = "0";
+      },2000)
+    } else {
+      const item = details;
+
+      console.log(event.target.dataset.product);
+      console.log(item);
+      console.log(item.id);
+
+      cart.push({
+        ...item,
+        numberOfUnits: 1,
+      });
+    }
+    updateCart();
+  }
+  console.log(cart);
+  //Update cart
+  function updateCart() {
+    renderCartItems();
+    renderSubTotal();
+
+    // Save cart to local storage
+    localStorage.setItem("CART", JSON.stringify(cart));
+
+  }
+
+  //Calculate and render subtotal
+  function renderSubTotal() {
+    let totalPrice = 0,
+      totalItems = 0;
+
+
+    cart.forEach((item) => {
+      let price = item.price_html.replace(/^\D+/g, '');
+      price = price.substring(11, 17)
+
+      totalPrice += price * item.numberOfUnits;
+      totalItems += item.numberOfUnits
+    });
+
+    subTotal.innerHTML = `Total (${totalItems} items): $${totalPrice.toFixed(2)}`;
+    totalItemsInCart.innerHTML = totalItems;
+  }
+
+  // const minus = document.querySelector(".minus");
+  // const plus = document.querySelector(".plus");
+
+  //Render cart items
+  function renderCartItems() {
+    cartItems.innerHTML = ""; //clear cart
+    cart.forEach((item) => {
+      cartItems.innerHTML += `
+            <div class="cart-item" data-product="${item.id}">
+            <div class="item-info" id="remove-item">
+                <img src="${item.images[0].src}" alt="${item.name}">
+                <h4>${item.name}</h4>
+            </div>
+            <div class="unit-price">
+                <small></small>${item.price_html}
+            </div>
+            <div class="units">
+            <div class="btn minus" id="minus">-</div>
+            <div class="number">${item.numberOfUnits}</div>
+            <div class="btn plus" id="plus">+</div>          
+            </div>
+        </div>
+            `
+      // plus.onclick = changeNumberOfUnits("plus", details.id);
+      // minus.onclick = changeNumberOfUnits("minus", details.id);
+
+      document.getElementById("remove-item").addEventListener("click", removeItemFromCart, false);
+      // document.getElementById("minus").addEventListener("click", changeNumberOfUnits("minus", item.id));
+      // document.getElementById("plus").addEventListener("click", changeNumberOfUnits("plus", item.id));
+
+    });
+
+  }
+
+
+  //Remove item from cart
+  function removeItemFromCart() {
+    cart = cart.filter((item) => item.id !== item.id);
+
+    updateCart();
+  }
+
+
+
+
+  //Change number of units for an item
+  function changeNumberOfUnits(action, id) {
+    cart = cart.map((item) => {
+      let numberOfUnits = item.numberOfUnits;
+
+      console.log(numberOfUnits);
+
+      if (item.id === id) {
+        if (action === "minus") {
+          numberOfUnits--;
+        } else if (action === "plus") {
+          numberOfUnits++;
+        }
+      }
+      console.log(numberOfUnits);
+      return {
+        ...item,
+        numberOfUnits,
+      };
+    });
+
+    updateCart();
+
+  }
+
+
+  cartButton.onclick = function () {
+    if (cartList.style.display === "block") {
+      cartList.style.display = "none";
+    } else {
+      cartList.style.display = "block";
+    }
+  }
+
 }
 
+fetchProduct();
 
-fetchproduct();
+
+
+
+
+
+
+
+
+
 
 //for (let i = 0; i < 4; i++) {
 
