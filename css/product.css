@@ -75,7 +75,6 @@ main {
 
 .pick-orange {
     background: #fea037;
-    border: solid 2px var(--color-header-footer);
 }
 
 .pick-black {
@@ -84,6 +83,10 @@ main {
 
 .pick-blue {
     background: #06227B;
+}
+
+.active-color, .color-box:hover {
+    transform: scale(1.3);
 }
 
 .size-box {
@@ -99,13 +102,12 @@ main {
     color: #041C1B;
 }
 
-.size-m {
+.active-size, .active-size p, .size-box:hover {
     background: var(--color-light-green);
-}
-
-.size-m p {
+    text-decoration: none;
     color: white;
 }
+
 
 .grid_container {
   margin-top: 50px;  
@@ -119,8 +121,7 @@ main {
 }
 
 .cta_green:hover {
-    background: black;
-    color: white;
+
 }
 
 .nav_icons {

@@ -296,8 +296,14 @@ nav li {
 
 .cart-footer .checkout {
   background-color: rgb(242, 255, 58);
-
   cursor: pointer;
+  text-decoration: none;
+}
+
+.checkout:hover {
+  background: white;
+  margin: 0;
+  color: var(--color-header-footer);
 }
 
 .added-hide {

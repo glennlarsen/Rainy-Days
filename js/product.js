@@ -101,26 +101,26 @@ function createHtml(details) {
           </div>
         </div>
         <div class="color-container">
-          <p><span class="light-orange">color:</span> light orange</p>
+          <p><span class="light-orange">color:</span></p>
           <div class="color-picker">
-            <div class="color-box pick-orange"></div>
-            <div class="color-box pick-black"></div>
-            <div class="color-box pick-blue"></div>
+            <div class="color-box pick-orange" data-color="orange"></div>
+            <div class="color-box pick-black" data-color="black"></div>
+            <div class="color-box pick-blue" data-color="blue"></div>
           </div>
         </div>
         <div class="size-container">
-          <p><span class="m">size:</span> m</p>
+          <p><span class="m">size:</span></p>
           <div class="size-picker">
-            <div class="size-box size-s">
+            <div class="size-box size-s" data-size="s">
               <p>S</p>
             </div>
-            <div class="size-box size-m">
+            <div class="size-box size-m" data-size="m">
               <p>M</p>
             </div>
-            <div class="size-box size-l">
+            <div class="size-box size-l" data-size="l">
               <p>L</p>
             </div>
-            <div class="size-box size-xl">
+            <div class="size-box size-xl" data-size="xl">
               <p>XL</p>
             </div>
           </div>
@@ -169,9 +169,9 @@ function createHtml(details) {
     if (cart.some((item) => item.id === details.id)) {
       changeNumberOfUnits("plus", details.id);
       addConfirmation.style.opacity = "1";
-      setTimeout(function() {
+      setTimeout(function () {
         addConfirmation.style.opacity = "0";
-      },2000)
+      }, 2000)
     } else {
       const item = details;
 
@@ -293,6 +293,23 @@ function createHtml(details) {
       cartList.style.display = "block";
     }
   }
+
+  let colorButton = document.querySelectorAll(".color-box");
+  let sizeButton = document.querySelectorAll(".size-box");
+
+  colorButton.forEach(button => {
+    button.addEventListener('click', function () {
+      colorButton.forEach(btn => btn.classList.remove('active-color'));
+      this.classList.add('active-color');
+    });
+  });
+
+  sizeButton.forEach(button => {
+    button.addEventListener('click', function () {
+      sizeButton.forEach(btn => btn.classList.remove('active-size'));
+      this.classList.add('active-size');
+    });
+  });
 
 }
 
