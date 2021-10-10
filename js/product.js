@@ -232,18 +232,12 @@ function createHtml(details) {
                 <small></small>${item.price_html}
             </div>
             <div class="units">
-            <div class="btn minus" id="minus">-</div>
-            <div class="number">${item.numberOfUnits}</div>
-            <div class="btn plus" id="plus">+</div>          
+            <div class="number">${item.numberOfUnits}</div>       
             </div>
         </div>
             `
-      // plus.onclick = changeNumberOfUnits("plus", details.id);
-      // minus.onclick = changeNumberOfUnits("minus", details.id);
 
       document.getElementById("remove-item").addEventListener("click", removeItemFromCart, false);
-      // document.getElementById("minus").addEventListener("click", changeNumberOfUnits("minus", item.id));
-      // document.getElementById("plus").addEventListener("click", changeNumberOfUnits("plus", item.id));
 
     });
 

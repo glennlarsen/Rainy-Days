@@ -1,7 +1,6 @@
 @import "imports/links.css";
 @import "imports/variables.css";
 
-
 /*Global*/
 html {
   font-size: 100%;
@@ -58,7 +57,11 @@ img {
 header {
   display: block;
   width: 100%;
-  background: linear-gradient(90deg, #ffffff 50%, var(--color-header-footer) 50%);
+  background: linear-gradient(
+    90deg,
+    #ffffff 50%,
+    var(--color-header-footer) 50%
+  );
   position: fixed;
   z-index: 1;
   top: 0;
@@ -166,8 +169,8 @@ nav li {
   letter-spacing: 5px;
 }
 
-.nav_icons:hover button >* {
-  opacity: .6;
+.nav_icons:hover button > * {
+  opacity: 0.6;
 }
 
 .icon-active {
@@ -228,15 +231,14 @@ nav li {
 
 .cart-item .item-info {
   flex: 1;
-  background-color: rgba(255, 255, 255, 0.6);
-
-  border-radius: 0 10px 10px 0;
+  background-color: rgba(240, 240, 240, 0.6);
+  border-radius: 0 8px 8px 0;
   gap: 10px;
   padding: 10px;
 }
 
 .cart-item .item-info:hover {
-  background-color: rgba(255, 0, 0, 0.6);
+  background-color: rgba(248, 44, 44, 0.6);
   cursor: pointer;
 }
 
@@ -255,37 +257,31 @@ nav li {
 
 .cart-item .units .number {
   margin: 0 10px;
-
   font-size: 1.2rem;
 }
 
 .cart-item .units .btn {
   width: 20px;
   height: 20px;
-
-  background-color: rgb(242, 255, 58);
-
+  background-color: rgb(245, 256, 55);
   border-radius: 50%;
-
   font-weight: bold;
-
   cursor: pointer;
-
-  -webkit-user-select: none; /* Chrome all / Safari all */
-  -moz-user-select: none; /* Firefox all */
-  -ms-user-select: none; /* IE 10+ */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .cart-footer {
   width: 100%;
-  background-color: rgb(242, 255, 58);
+  background-color: rgb(245, 256, 55);
   bottom: 0;
   left: 0;
-
   border-left: 1px solid rgb(var(--right-side-bg-color));
 }
 
-.cart-footer div, .cart-footer a {
+.cart-footer div,
+.cart-footer a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -295,7 +291,7 @@ nav li {
 }
 
 .cart-footer .checkout {
-  background-color: rgb(242, 255, 58);
+  background-color: rgb(245, 256, 55);
   cursor: pointer;
   text-decoration: none;
 }
@@ -442,10 +438,10 @@ input:focus::placeholder {
   color: #10474e;
 }
 
-
 /* Product grid and products styling used in shop and product page*/
 
-.grid_container, .grid_container2 {
+.grid_container,
+.grid_container2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(287px, 1fr));
   gap: 10px;
